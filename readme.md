@@ -1,4 +1,4 @@
-#VuforiaClient for PHP
+# VuforiaClient for PHP
 
 A simple Vuforia client to make basic operations on Vuforia Target database.
 
