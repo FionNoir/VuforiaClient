@@ -2,6 +2,10 @@
 
 A simple Vuforia client to make basic operations on Vuforia Target database.
 
+## Support
+
+Tested with PHP 5.3
+
 ## Usage
 
 See the instructions in the [wiki](https://github.com/FionNoir/VuforiaClient/wiki).
