@@ -1,6 +1,7 @@
 # VuforiaClient for PHP
 
 A simple Vuforia client to make basic operations on Vuforia Target database.
+*Contributors are welcome*
 
 ## Support
 
