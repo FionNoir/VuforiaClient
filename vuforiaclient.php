@@ -157,7 +157,7 @@ class VuforiaClient {
         if ($info['http_code'] !== 200) {
             die('Failed to list targets: ' . $response . "\n");
         }
-        $targets = json_decode($response);
+        return $targets = json_decode($response);
     }
 
     /**
