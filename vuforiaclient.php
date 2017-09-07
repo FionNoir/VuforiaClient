@@ -143,6 +143,22 @@ class VuforiaClient {
             return json_decode($response);
         }
     }
+    
+   /**
+    * Get all targets from database accessed by the given keys.
+    * @return [JSON String] Vuforia targets
+    */
+    public function getAllTargets() {
+        $ch = curl_init(self::BASE_URL . self::TARGETS_PATH);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $this->getHeaders('GET'));
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        $response = curl_exec($ch);
+        $info = curl_getinfo($ch);
+        if ($info['http_code'] !== 200) {
+            die('Failed to list targets: ' . $response . "\n");
+        }
+        $targets = json_decode($response);
+    }
 
     /**
     * Create a request header.
