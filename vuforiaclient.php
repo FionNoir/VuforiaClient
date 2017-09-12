@@ -186,14 +186,13 @@ class VuforiaClient {
     }
 
     /**
-    * Create a metadata for request.
+    * Create a metadata for request. You can write any information into the metadata array you want to store.
     * @return [Array] Metadata for request.
     */
     private function createMetadata() {
         $metadata = array(
-            'wine_id' => 1,
-            'image_url' => $this->imagePath.$this->imageName,
-            'wine_com_url' => $this->imagePath.$this->imageName,
+            'id' => 1,
+            'image_url' => $this->imagePath.$this->imageName
         );
         return base64_encode(json_encode($metadata));
     }
