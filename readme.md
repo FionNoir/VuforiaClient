@@ -6,7 +6,7 @@ A simple Vuforia client to make basic operations on Vuforia Target database.
 
 ## Support
 
-Tested with PHP 5.3
+Tested with PHP 5.3 and PHP 5.2 (see [wiki](https://github.com/FionNoir/VuforiaClient/wiki))
 
 ## Usage
 
